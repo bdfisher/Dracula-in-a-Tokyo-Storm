@@ -2,6 +2,8 @@
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
 
+![Screenshot](https://githhub.com/bdfisher/Dracula-in-a-tokyo-theme/icon.png)
+
 ## Based On
 The core of this theme is forked from the Dracula Theme. The only slight modification is changing the harsh white to color to the text colors from the Tokyo Night Storm theme in certain places.
 
