@@ -9,6 +9,8 @@ dracula:
   base:
     - &BG        '#282A36'
     - &FG        '#F8F8F2'
+    - &FG2       '#7982a9'
+    - &FGT       '#a9b1d6'
     - &SELECTION '#44475A'
     - &COMMENT   '#6272A4'
     - &CYAN      '#8BE9FD'
@@ -79,7 +81,7 @@ colors:
 
   # Base Colors
   focusBorder: *COMMENT                                                         # Overall border color for focused elements. This color is only used if not overridden by a component
-  foreground: *FG                                                               # Overall foreground color. This color is only used if not overridden by a component
+  foreground: *FG2                                                               # Overall foreground color. This color is only used if not overridden by a component
   widget.shadow:                                                                # Shadow color of widgets such as Find/Replace inside the editor
   selection.background: *PURPLE                                                 # Background color of text selections in the workbench (for input fields or text areas, does not apply to selections within the editor and the terminal)
   errorForeground: *RED                                                         # Overall foreground color for error messages (this color is only used if not overridden by a component)
@@ -176,7 +178,7 @@ colors:
   tab.unfocusedInactiveForeground:                                              # Inactive tab foreground color in an inactive editor group
 
   # Editor Colors
-  editor.foreground: *FG
+  editor.foreground: *FGT
   editor.background: *BG
   editorLineNumber.foreground: *COMMENT
   editorCursor.foreground:
@@ -1021,7 +1023,7 @@ tokenColors:
     - variable.other.constant.ts  # Fixes incorrect highlighting of pseudo-constants in ts
     - variable.other.constant.tsx # Fixes incorrect highlighting of pseudo-constants in tsx
     settings:
-      foreground: *FG
+      foreground: *FGT
 
   - name: Destructuring / aliasing reference name (LHS)
     scope:
@@ -1039,7 +1041,7 @@ tokenColors:
     - meta.variable.assignment.destructured.object.coffee variable variable  # Object destructuring variable (coffeescript)
     settings:
       fontStyle: normal
-      foreground: *FG
+      foreground: *FGT
 
 # =============================================================================
 # Language Extensions / Edge Cases
@@ -1057,7 +1059,7 @@ tokenColors:
     scope:
     - meta.selectionset.graphql meta.arguments variable
     settings:
-      foreground: *FG
+      foreground: *FGT
 
   - name: GraphQL fragment name (definition)
     scope:
@@ -1084,7 +1086,7 @@ tokenColors:
     - punctuation.separator.list.comma.css                          # Commas separating selectors in CSS
     - constant.language.empty-list.haskell
     settings:
-      foreground: *FG
+      foreground: *FGT
 
   # This is set to conform to the standard of coloring langage constants purple.
   # In this case, this colors "$?", "$@", "$*", "$1", etc..
@@ -1118,7 +1120,7 @@ tokenColors:
       - punctuation.definition.attribute-selector.end.bracket.square.scss
       - punctuation.definition.attribute-selector.begin.bracket.square.scss
     settings:
-      foreground: *FG
+      foreground: *FGT
 
   - name: Haskell Pragmas
     scope:
